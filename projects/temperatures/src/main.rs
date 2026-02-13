@@ -4,8 +4,9 @@ fn main() {
     println!("Hey, welcome to the temperature converter.");
     println!("Please input the value in C you want to convert to F");
 
-    let mut input = String::new();
     loop {
+        let mut input = String::new();
+
         io::stdin()
             .read_line(&mut input)
             .expect("Failed to read line");
